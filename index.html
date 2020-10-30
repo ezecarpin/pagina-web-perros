@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Maquetación</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="https://kit.fontawesome.com/ffa91cea9a.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+	 	var nombre = prompt("Ingrese nombre usuario")
+		var email = prompt("Ingrese su mail")
+		var edad = prompt("Ingrese su edad")
+		var razaPerro = prompt("Ingrese su raza de perro preferido")
+		var  cantidadPerros= prompt("Ingrese cantidad de perros que posee")
+	</script>
+</head>
+<body>
+	<header>
+		<div id="logo"></div>
+		<nav id="menu">
+			<ul>
+				<li><a href="#inicio">inicio</a></li>
+				<li><a href="#educacion">educacion</a></li>
+				<li><a href="#alimentacion">alimentacion</a></li>
+				<li><a href="#imagen-der-alimentacion">interesante</a></li>
+				<li><a href="#adopta">adopta</a></li>
+			</ul>
+		</nav>
+
+	</header>
+		<section id="datos-usuario">
+	<!--<ul id="menu">
+			<li><a href="#juego1" onclick="juego1()">juego 1</a></li>
+			<li><a href="#juego2" onclick="juego2()">juego 2</a></li>
+			<li><p id="resultado"></p></li>
+			<li><a href="bootstrap-4.5.3-dist/servicios.html" style="color: red">BOOTSTRAP</a></li>
+		</ul> -->
+			<div id="datos-izq">
+			<p>
+				<script type="text/javascript">
+					document.write("Usuario: " + nombre +"  " + " Edad:" + edad)	
+				</script>
+			</p>
+			<p>
+				<script type="text/javascript">
+					document.write("E-Mail: " + email)	
+				</script>
+			</p>
+		</div>
+		<div id="datos-der">
+			<p>
+				<script type="text/javascript">
+					document.write("Raza de perro preferido: " + razaPerro)	
+				</script>
+			</p>
+			<p>
+				<script type="text/javascript">
+					document.write("Cant. Perros: " + cantidadPerros)	
+				</script>
+			</p>
+		</div>
+		</section>
+		
+		<section id="inicio">
+			<div id="texto-izq">
+				<a href=""><h1>SoyunPerro</h1></a>
+				<h2>Expertos en el mundo Canino</h2>
+			</div>
+			<div id="texto-der">			
+			</div>
+			<div id="img-der">
+				<h2>Hovawart</h2>
+				<p>Estos perros, de origen germano, destacan por su corpulencia y temperamento protector y participativo. Como buenos guardianes de las granjas necesitan sentirse parte del equipo y ejercer la misión que se les ha encomendado. De hecho, antiguamente se les llamaba Hofwart que significa ‘guardián del corral’, una tarea que abordaban con suma eficacia.</p>
+			</div>
+			<div id="img-izq"></div>
+			
+			<div id="texto-centro">
+				<h2>Can de palleiro o Pastor gallego</h2>
+				<p>Esta raza gallega guarda parentesco con los pastores alemanes, belgas, holandeses y con el can do Castro Laboreiro </p>
+			</div>
+		</section>
+
+		<section id="educacion">
+			<div id="img-educacion"></div>	
+			<div id="texto-educacion">
+				<h2>Cómo corregir a un perro</h2>
+				<p>Uno de los pasos más importantes a la hora de comenzar con la educación de nuestro perro, es precisamente poder transmitirle de forma correcta nuestras intenciones. Indicarle cuando lo está haciendo bien y por supuesto, saber cómo corregir a un perro cuando lo esté haciendo mal.</p>
+				<p>Existen muchas técnicas diferentes de adiestramiento / educación canina, todas ellas son igual de buenas y funciones. Pero solo existen unas pocas técnicas correctas para indicarle a nuestro perro que no nos gusta su comportamiento o simplemente darle un toque de atención. Vamos a repasar y a explicar cómo debemos decirle “no” a nuestro perro.</p>
+			</div>
+		</section>
+
+		<section id="alimentacion">
+			<div id="imagen-izq-alimentacion"></div>
+			<div id="texto-der-alimentacion">
+				<h2>Cuatro formas de alimentar a un perro</h2>
+				<p>Desde hace siglos los perros han sido alimentados con las sobras de las comidas de los humanos, de echo aun a día de hoy en muchos pueblos de la geografía Española y Mexicana se siguen alimentando así.</p>
+				<p>No hace muchos años se inventó lo que hoy conocemos cómo pienso o balanceado para perros, las clásicas croquetas elaboradas a partir de carne o pescado y que incluyen cereales, frutas, tubérculos, etc…. una alimentación completa en formato de croqueta.</p>
+			</div>
+			<div id="imagen-der-alimentacion"></div>
+			<div id="texto-izq-alimentacion">
+				<h2>¿Por qué mi perro me mira a los ojos?</h2>
+				<p>Son muchas las situaciones en las que nos encontramos con que nuestro perro nos mira fijamente o cruza una mirada cómplice con nosotros, aunque sólo sea por uno segundos. Todas esas situaciones tienen una explicación, ya que la comunicación visual es una forma más de comunicaciones entre perros y humanos.</p>
+			</div>
+		</section>
+
+		<section id="adopta">
+			<h2>Formulario</h2>
+			<p>Completa con tus datos por cualquier consulta, en caso de adopción tenes que  ser mayor de edad</p>
+			<form method="POST" action="#">
+				<ul>
+					<li>Nombre: <input type="text" name="nombre" required></li>
+					<li>Apellido:<input type="text" name="apellido" required></li>
+					<li>Email:<input type="email" name="correo" required> </li>
+					<li>Edad: <input type="number" name="edad" min="17" required></li>
+					<li>Consulta: <textarea name="consulta" rows="4"></textarea></li>
+					<li><input type="submit" name=""></li>
+				</ul>
+			</form>
+		</section>
+
+	<footer>
+		<div id="texto-pie-izq">SoyunPerro 2010 - 2020</div>
+		<div id="texto-pie-centro"><a href="">Cookies</a> - <a href="">Privacidad</a> - <a href="">Legal</a> 	| <a href="">Contacto/Noticias</a> | <a href=""> Nuestras apps: Android</a></div>
+		<div id="texto-pie-der">
+			<a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-twitter"></i></a>
+			<a href=""><i class="fab fa-instagram"></i></a><a href=""><i class="fab fa-linkedin-in"></i></div></a>
+	</footer>
+	<script type="text/javascript" src="juegos.js"></script>
+</body>
+</html>
